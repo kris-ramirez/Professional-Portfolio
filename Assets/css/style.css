@@ -46,34 +46,35 @@ header nav ul li {
 header nav ul li a {
     color: whitesmoke;
 }
-/* figure */
-img {
+/* Profile picture */
+.profile img {
     display: inline-block;
     height: 180px;
     width: 110px;
     margin-left: 20px;
     border-radius: 5%;
-    object-fit:cover;
+    object-fit: cover;
 }
-/* main */
-h2 {
+/* ties nav links to corresponding sections */
+h1 {
     margin: 20px, 0, 20px, 0;
     padding-left: 50px;
     color:aliceblue;
 }
-h2:target {
+h1:target {
     color: aliceblue;
     background: #276b61;
     display: block;
     padding-bottom: 5px;
 }
-/* bootcamp */
+/* First project image to be larger than the rest*/
 .container {
     color: white;
     position: relative;
     text-align: left;
     margin-left: 50px;
-    display: inline-block;
+    display: flex;
+    flex-wrap: row;
 }
 .container img{
     height: 250px;
@@ -81,14 +82,15 @@ h2:target {
     border: 5px solid #e27d60;
     background-color: #b3e0da;
 }
-.container h2 {
+.container p {
     position: absolute;
     bottom: 20px;
-    right: 15px;
+    left: 400px; 
     background-color: #41B3A3;
-    padding: 7px;
+    padding: 10px;
+    width: auto;
 }
-/* app gallery in portfolio */
+/* app gallery in portfolio*/
 .projects {
     display: flex;
     flex-direction: row;
@@ -98,23 +100,38 @@ h2:target {
     height: fit-content;
     margin-left: 50px;
     overflow: hidden;
-}
-.card {
-    flex: 1 0 0;
-    padding: 10px;
-    width: 300px;
-    text-align: center;
-}
-.card h2{
-    padding: 10px;
-    background: #e27d60;
+    position: relative;
 }
 
-.card a{
-    color: whitesmoke;
+.card {
+    flex: 1 0 0;
+    padding: 10px 5px;
+}
+.card p {
+    position: absolute;
+    bottom: 20px;
+    padding: 10px;
+    background: #e27d60;
+    width: auto;
 }
 .card img {
-    width: 100%;
+    height: 250px;
+    width: 300px;
     margin:auto;
     object-fit:cover;
+    border: 5px solid #e27d60;
+    background-color: #b3e0da;
+}
+
+/* Large smartphones - header & nav bar change color */
+@media  screen and (max width: 992px) { 
+    header,
+    nav {
+        background-color: #61464f;
+    }
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-color: black;
+    }
 }
