@@ -12,13 +12,9 @@ This portfolio is meant to showcase applications I've created during the bootcam
 
 Follow this link to see the portfolio: https://kris-ramirez.github.io/Professional-Portfolio/
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative filepath, add it to your README using the following syntax:
-
-    ```md
-    ![alt text](assets/images/screenshot.png)
 Below are screenshots of the final product:
-!Portfolio Image (Assets/images/Final1.png)
-!Portfolio Image (Assets/images/Final2.png)
+![Portfolio Image-1](Assets/images/Final1.png)
+![Portfolio Image-2](Assets/images/Final2.png)
 
 ## Credits
 
