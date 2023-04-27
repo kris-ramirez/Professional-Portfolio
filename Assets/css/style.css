@@ -52,7 +52,7 @@ nav a:hover {
 nav a:active {
     background-color:#61464f;
 }
-/* Profile picture */
+/* Profile picture and welcome paragraph */
 .profile {
     display: flex;
     align-items: center;
@@ -68,8 +68,6 @@ nav a:active {
     border: solid #61464f 3px;
 }
 .profile p {
-    font-size:x-large;
-    font-weight: bold;
     display: inline;
     float: left;
     width:58%;
